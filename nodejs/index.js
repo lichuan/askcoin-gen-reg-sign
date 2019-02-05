@@ -97,7 +97,11 @@ ws.on('message', function(msg_data) {
         }, 10000);
     }
     else if(msg_obj.msg_type == 1 && msg_obj.msg_cmd == 0) { // ACCOUNT_IMPORT
-	latest_block_id = msg_obj.block_id;
+	if(msg_obj.err_code == null) {
+	    latest_block_id = msg_obj.block_id;
+	} else {
+	    console.log("error: your privkey is not registered in Fullnode");
+	}
     }
     else if(msg_obj.msg_type == 3 && msg_obj.msg_cmd == 0) // BLOCK_SYNC
     {
