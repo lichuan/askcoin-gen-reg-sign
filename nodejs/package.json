@@ -1,0 +1,17 @@
+{
+  "name": "askcoin-gen-reg-sign",
+  "version": "0.0.1",
+  "description": "generate registration string for new users",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lichuan",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "^4.16.4",
+    "hash": "^0.2.1",
+    "elliptic": "^6.4.0",
+    "ws": "^3.0.0"
+  }
+}
