@@ -98,6 +98,7 @@ ws.on('message', function(msg_data) {
     }
     else if(msg_obj.msg_type == 1 && msg_obj.msg_cmd == 0) { // ACCOUNT_IMPORT
 	if(msg_obj.err_code == null) {
+	    console.log("start askcoin-gen-reg-sign server successfully.");
 	    latest_block_id = msg_obj.block_id;
 	} else {
 	    console.log("error: your privkey is not registered in Fullnode");
@@ -133,6 +134,4 @@ app.get('/generate', function (req, res) {
     res.send(sign_string);
 });
 
-app.listen(8088, function () {
-    console.log("start askcoin-gen-reg-sign server successfully.");
-});
+app.listen(8088, function () {});
