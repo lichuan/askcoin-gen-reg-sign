@@ -52,7 +52,7 @@ var app = express();
 //     EXCHANGE_WITHDRAW_TX_PROBE
 // };
 
-var privkey_str = "Vm1wSmQwMVhSWGxUYTJScVUwWktXRmxzVWtKaVJUQjN=";
+var privkey_str = "Vm1wSmQwMVhSWGxUYTJScVUwWktXRmxzVWtKaVJUQjN="; // change this to your privkey
 var privkey_buf = Buffer.from(privkey_str, 'base64');
 var privkey = ec.keyFromPrivate(privkey_buf);
 var pubkey_hex = privkey.getPublic('hex');
