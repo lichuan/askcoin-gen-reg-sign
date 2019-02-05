@@ -130,4 +130,5 @@ app.get('/generate', function (req, res) {
 });
 
 app.listen(8088, function () {
+    console.log("start askcoin-gen-reg-sign server successfully.");
 });
