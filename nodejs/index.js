@@ -110,7 +110,7 @@ ws.on('message', function(msg_data) {
     }
 });
 
-app.use(express.static("/usr/share/nginx/askcoin-gen-reg-sign/www"));
+app.use(express.static(__dirname + "/../www"));
 
 app.get('/', function (req, res) {
    res.sendFile("/index.html");
