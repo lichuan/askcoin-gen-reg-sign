@@ -112,10 +112,6 @@ ws.on('message', function(msg_data) {
 
 app.use(express.static(__dirname + "/../www"));
 
-app.get('/', function (req, res) {
-   res.sendFile("/index.html");
-});
-
 app.get('/generate', function (req, res) {
     if(req.query.user == null) {
 	res.send("user can't be null");
