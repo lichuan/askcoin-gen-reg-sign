@@ -9,7 +9,7 @@
   "author": "lichuan",
   "license": "Apache-2.0",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "hash": "^0.2.1",
     "elliptic": "^6.4.0",
     "ws": "^3.0.0"
